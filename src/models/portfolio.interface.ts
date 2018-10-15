@@ -8,6 +8,7 @@ export interface Portfolio {
     socialMedia: Social[];
     description: string;
     changeLog: ChangeLog[];
-    bioDescription: string;
+    subheading: string;
     updates: Updates[];
+    speakerBio: string;
 }
