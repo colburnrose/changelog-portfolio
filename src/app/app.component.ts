@@ -14,8 +14,24 @@ export class AppComponent implements OnInit {
       this.portfolio = {
         firstName: 'Colburn',
         lastName: 'Sanders',
-        subheading: 'Full Stack Developer / Content Creator / Gamer',
-        socialMedia: [],
+        subheading: 'Full Stack .NET Developer / Content Creator / Gamer',
+        socialMedia: [
+          {
+            icon: 'fa fa-linkedin fa-2x',
+            link: 'https://www.linkedin.com/in/colburnrose/',
+            color: '#0077B5'
+          },
+          {
+            icon: 'fa fa-github fa-2x',
+            link: 'https://github.com/colburnrose',
+            color: '#6E5494'
+          },
+          {
+            icon: 'fa fa-twitter fa-2x',
+            link: 'https://twitter.com/colburnomareo',
+            color: '#00C6FF'
+          }
+        ],
         description: 'Hi, I\'m Colburn Sanders, and I am a Full Stack Developer and Content Creator in the St. Louis area',
         updates: [],
         changeLog: [],
