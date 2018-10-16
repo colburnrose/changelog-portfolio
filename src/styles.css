@@ -8,10 +8,13 @@ body {
 }
 
 .container {
-    color: #000;
     margin-top: 10px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .smallerImg {
+    margin-bottom: 5px;
     width: 20%;
 }
+

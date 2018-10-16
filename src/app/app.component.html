@@ -9,4 +9,13 @@
             <i [style.color] ="social.color" [class]="social.icon"></i>
         </a>
     </div>
+    <div>
+        <h3>
+            <i (click)="toggle('logOpen')" *ngIf="logOpen; else logExpanded" class="fa fa-plus"></i> 
+            <ng-template #logExpanded>
+                <i class="fa fa-minus"></i>
+            </ng-template>
+            Changelog
+        </h3>
+    </div>
 </div>
