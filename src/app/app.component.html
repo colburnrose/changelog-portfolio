@@ -11,11 +11,21 @@
     </div>
     <div>
         <h3>
-            <i (click)="toggle('logOpen')" *ngIf="logOpen; else logExpanded" class="fa fa-plus"></i> 
+            <i (click)="toggleOpen('logOpen')" *ngIf="logOpen; else logExpanded" class="fa fa-plus"></i> 
             <ng-template #logExpanded>
-                <i class="fa fa-minus"></i>
+                <i class="fa fa-minus" (click)="toggleOpen('logOpen')"  ></i>
             </ng-template>
             Changelog
         </h3>
+
+        <div *ngIf="!logOpen">
+            <ul>
+                <li *ngFor="let change of portfolio.changeLog">
+                    <div>{{change.month + ' - ' + change.year}}</div>
+                    <div>{{change.highlight}}</div>
+                    <div>{{change.details}}</div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

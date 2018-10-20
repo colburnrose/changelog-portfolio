@@ -1,7 +1,7 @@
 export interface ChangeLog {
     color: string;
     month: string;
-    year: number;
+    year: any;
     highlight: string;
     details: string;
 }
