@@ -45,15 +45,16 @@ export class AppComponent implements OnInit {
             color: '#1OA2F45',
             month: 'January',
             year: 2018,
-            highlight: 'Full Stack Software Developer @EagleTech_Group',
-            details: '',
+            // tslint:disable-next-line:max-line-length
+            highlight: 'Full Stack Software Developer @EagleTech_Group.',
+            details: 'Aquired a remote ASP.NET project as maintenance while working the multip-sports applicaions',
           },
           {
             color: '#1OA2F45',
             month: 'August',
             year: 2017,
             highlight: 'New Role as Full Stack Software Developer @EagleTech_Group',
-            details: 'Building a full stack web-app for a multi-sports application',
+            details: 'Building a full stack .NET MVC 5 web-app for a multi-sports application',
           },
           {
             color: '#1OA2F45',

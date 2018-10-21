@@ -21,3 +21,8 @@ body {
 i:hover {
     color: #fff !important;
 }
+
+.changeLogDetails {
+    font-weight: 300;
+    color: red;
+}

@@ -20,10 +20,10 @@
 
         <div *ngIf="!logOpen">
             <ul>
-                <li *ngFor="let change of portfolio.changeLog">
+                <li *ngFor="let change of portfolio.changeLog" [ngStyle] = "{'color': change.color}" (mouseenter)="change.showDetails = true;" (mouseleave)="change.showDetails = false;">
                     <div>{{change.month + ' - ' + change.year}}</div>
                     <div>{{change.highlight}}</div>
-                    <div>{{change.details}}</div>
+                    <div *ngIf="change.showDetails" class="changeLogDetails">{{change.details}}</div>
                 </li>
             </ul>
         </div>
