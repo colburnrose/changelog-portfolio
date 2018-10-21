@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
         description: 'Hi, I\'m Colburn Sanders, and I am a Full Stack Developer and Content Creator in the St. Louis area',
         updates: [
           {
-            description: '.NET Devup Conference',
+            description: 'Attended Dev Up Conference for .NET Developers',
             links: 'https://devupconf.org/',
           }
         ],
