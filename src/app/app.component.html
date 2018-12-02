@@ -9,6 +9,7 @@
             <i [style.color] ="social.color" [class]="social.icon"></i>
         </a>
     </div>
+    <br>
     <div>
         <h3>
             <i (click)="toggleOpen('logOpen')" *ngIf="logOpen; else logExpanded" class="fa fa-plus"></i> 
@@ -24,6 +25,25 @@
                     <div>{{change.month + ' - ' + change.year}}</div>
                     <div>{{change.highlight}}</div>
                     <div *ngIf="change.showDetails" class="changeLogDetails">{{change.details}}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div>
+        <h3>
+            <i (click)="toggleUpdate('updateOpen')" *ngIf="updateOpen; else updateExpanded" class="fa fa-plus"></i>
+            <ng-template #updateExpanded>
+                <i class="fa fa-minus" (click)="toggleUpdate('updateOpen')"></i>
+            </ng-template>4
+            Update
+        </h3>
+
+        <div *ngIf="!updateOpen">
+            <ul>
+                <li *ngFor="let update of portfolio.updates">
+                    <div>{{update.description}}</div>
+                    <div>{{update.links}}</div>
                 </li>
             </ul>
         </div>

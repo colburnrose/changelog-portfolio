@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
 
   public portfolio: Portfolio;
   public logOpen = true;
+  public updateOpen = true;
 
   public ngOnInit(): void {
       this.portfolio = {
@@ -73,6 +74,13 @@ export class AppComponent implements OnInit {
       switch (toggle) {
         case 'logOpen':
         this.logOpen = !this.logOpen;
+      }
+    }
+    // method to expand update log
+    public toggleUpdate(update: string): void {
+      switch (update) {
+        case 'updateOpen':
+        this.updateOpen = !this.updateOpen;
       }
     }
 }
